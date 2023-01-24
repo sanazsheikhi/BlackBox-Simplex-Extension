@@ -1,0 +1,12 @@
+function [] = check_divergence_simple(pos, vel)
+n = size(pos, 2);
+for i = 1:n
+    for j = i+1:n
+        p_ij = pos(:,i) - pos(:,j);
+        p_ji = -p_ij;
+        v_i = vel(:,i);
+        v_j = vel(:,j);
+    end
+end
+end
+

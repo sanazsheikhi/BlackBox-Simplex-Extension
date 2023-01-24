@@ -1,0 +1,18 @@
+function [theta_radians] = angle_vectors(u,v)
+%% angle_vectors - angle in radians between vectors u,v. 
+% Input:
+%    u    - 3 x 1 or 1 x 3 vector
+%    v    - 3 x 1 or 1 x 3 vector
+% Output
+%    theta_radians    - 1 x 1 angle in radians.
+% Usama Mehmood - Oct 2019
+    theta_radians = 0;
+    if all(u==0) || all(v==0)
+        return;
+    end
+    CosTheta = dot(u,v)/(norm(u)*norm(v));
+    if abs(CosTheta) > 1 %floating point precision cannot represent number accurately.
+        CosTheta = sign(CosTheta)*1;
+    end
+    theta_radians = acos(CosTheta);
+end

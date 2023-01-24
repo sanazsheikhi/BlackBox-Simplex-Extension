@@ -1,0 +1,9 @@
+function [] = display_traj_policy(x, y, policy, steps, dt)
+colors = [0.8,0.8,0.8;0,0,1];
+    for i = 1:steps
+        st = (i)*dt;
+        ed = (i+1)*dt;
+        plot([st ed],[data(i) data(i+1)],'LineWidth', 1.5, 'Color', colors(policy(i),:))
+        hold on
+    end
+end

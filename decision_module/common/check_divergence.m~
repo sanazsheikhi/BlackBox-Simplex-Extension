@@ -1,0 +1,10 @@
+function [is_diverging] = check_divergence(vel)
+ [res] = relative_speed(pos, vel);
+ 
+ if any(any(inter_agent_distance(next_pos) < params.dmin & eye(params.n) == 0))
+    is_collision = true;
+ end
+
+ 
+end
+
