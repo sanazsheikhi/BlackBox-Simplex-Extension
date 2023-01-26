@@ -8,7 +8,7 @@ close all
 addpath(genpath('safety_controller'));
 addpath(genpath('controller_cmpc_2d'));
 addpath(genpath('decision_module'));
-
+addpath(genpath('extended_BBS'));
 addpath('common');
 
 
