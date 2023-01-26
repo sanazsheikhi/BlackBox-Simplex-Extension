@@ -1,5 +1,5 @@
 Instructions to run the code.
-1. Execute the script file main_bb_reverse_extended.m
+1. Execute the script file main_bb_reverse.m
 2. The trajectroy data gets stored in a folder named traj at the parent directory of the project.
 3. Path of the trajectroy data file is printed on the console.
 
